@@ -2,3 +2,37 @@ body {
     background-color: whitesmoke;
     color: black;
 }
+
+#game-title {
+    margin: auto;
+    padding: 30px 30px;
+    color: black;
+    text-align: center;
+    font-family: 'Fugaz One', cursive;
+    font-size: 65pt;
+}
+
+#start {
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 15px 32px;
+    background-color: #24282d;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 18pt;
+    display: block;
+}
+
+#splash-screen {
+    margin: auto;
+    padding: 25px 25px;
+    background-color: white;
+    border: black 5px;
+    border-style: solid;
+    width: 50%;
+}
+
+
+/* Add Media Queries */
+/* @media */
