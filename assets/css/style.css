@@ -13,8 +13,7 @@ body {
 }
 
 #start {
-    margin-left: 40%;
-    margin-right: 40%;
+    margin: auto;
     padding: 15px 32px;
     background-color: #24282d;
     color: white;
@@ -24,14 +23,18 @@ body {
     display: block;
 }
 
-/* #splash-screen {
+#count-down {
     margin: auto;
-    padding: 25px 25px;
-    background-color: white;
-    border: black 5px;
-    border-style: solid;
-    width: 50%;
-} */
+    padding: 15px;
+    text-align: center;
+    font-size: 26pt;
+    color: black;
+}
+
+#questions {
+    margin-left: 40%;
+    margin-right: 40%;
+}
 
 
 /* Add Media Queries */
