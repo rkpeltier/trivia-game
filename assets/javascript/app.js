@@ -4,11 +4,13 @@ $(document).ready(function() {
 var correctAnswer = 0;
 var wrongAnser = 0;
 var noAnswer = 0;
+var timer = 60;
 
 //Start Button
 $("#start").on("click", function() {
     $(this).hide();
-    
+    timer = setInterval(1000);
+    $("#count-down").html(timer);
 });
 
 //Trivia Questions
@@ -17,10 +19,16 @@ var triviaQuestion = [{
     multipleChoice: ["Pan", "Panovision", "Zolly", "Tracking"],
     answer: [2]
 }, {
-    
+
 }
 
 ];
 
+//Some Functions
+function displayTrivia() {
+    $("#questions").append(triviaQuestion);
+}
+
+displayTrivia();
 
 });

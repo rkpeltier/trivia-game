@@ -24,14 +24,14 @@ body {
     display: block;
 }
 
-#splash-screen {
+/* #splash-screen {
     margin: auto;
     padding: 25px 25px;
     background-color: white;
     border: black 5px;
     border-style: solid;
     width: 50%;
-}
+} */
 
 
 /* Add Media Queries */
