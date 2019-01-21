@@ -32,8 +32,17 @@ body {
 }
 
 #questions {
+    margin: auto;
+}
+
+img {
     margin-left: 40%;
     margin-right: 40%;
+    padding: 10px 10px;
+    display: block;
+    align-content: center;
+    width: 100px;
+    height: 100px;
 }
 
 
