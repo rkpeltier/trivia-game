@@ -53,8 +53,17 @@ function decrement() {
 
 //Display Questions
 function displayQuestions() {
-    $("#questions").append("<p>" + trivialPursuit[0].question + "</p>");
-    question++;
+    $("#questions").append("<p>" + trivialPursuit[0].question + "</p>"); //Showing as undefined, uncertain as to why
+    question++; 
+    displayChoices();
+}
+
+function displayChoices () {
+    $("#choices").append("<p>" + trivialPursuit.choices + "</p>")
+    //add new radio button to each choice available
+    //add if userPick is correct increase correctAnswer++
+    //Else if userPick is incorrect increase wrongAnswer++
+    //Else no answer selected noAnswer++
 }
 
 //Show Score
@@ -62,7 +71,7 @@ function showScore() {
     $("#score-screen").text("Correct Answers: " + correctAnswer)
     $("#score-screen").text("Wrong Answers: " + wrongAnser)
     $("#score-screen").text("Unanswered: " + noAnswer)
-
+    //add element restart trivia quiz button
 }
 
 
