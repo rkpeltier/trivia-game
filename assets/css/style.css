@@ -46,6 +46,7 @@ img {
     height: 100px;
 }
 
-
-/* Add Media Queries */
-/* @media */
+#score-screen {
+    margin: auto;
+    text-align: center;
+}

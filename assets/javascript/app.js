@@ -3,7 +3,7 @@ var correctAnswer = 0;
 var wrongAnser = 0;
 var noAnswer = 0;
 var question = 0;
-var timer = 60;
+var timer = 30;
 var intervalId;
 var userPick;
 
@@ -43,28 +43,26 @@ function startClock() {
 
 function decrement() {
     timer--;
-    if (timer < 1) {
+    if (timer <= 0) {
         clearInterval(intervalId);
-    }
+        showScore();
+        
+    } 
     $("#count-down").html("Time Remaining: " + timer); 
 }
 
 //Display Questions
 function displayQuestions() {
-    $("#questions").html("<h2>" + trivialPursuit[0].quesion + "</h2>");
+    $("#questions").append("<p>" + trivialPursuit[0].question + "</p>");
     question++;
-    for(i = 0; i<trivialPursuit.length; i++) {
-
-    }
 }
 
 //Show Score
 function showScore() {
+    $("#score-screen").text("Correct Answers: " + correctAnswer)
+    $("#score-screen").text("Wrong Answers: " + wrongAnser)
+    $("#score-screen").text("Unanswered: " + noAnswer)
 
-    $("#score-screen").html("<p>" + correctAnswer + "</p>")
-    $("#score-screen").html("<p>" + correctAnswer + "</p>")
-    $("#score-screen").html("<p>" + correctAnswer + "</p>")
 }
-
 
 
