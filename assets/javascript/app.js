@@ -2,8 +2,10 @@
 var correctAnswer = 0;
 var wrongAnser = 0;
 var noAnswer = 0;
+var question = 0;
 var timer = 60;
 var intervalId;
+var userPick;
 
 //Trivia Questions
 var trivialPursuit = [{
@@ -31,6 +33,7 @@ var trivialPursuit = [{
 $("#start").on("click", function(){
     $(this).hide();
     startClock();
+    displayQuestions();
 });
 
 //Timer functions
@@ -48,7 +51,20 @@ function decrement() {
 
 //Display Questions
 function displayQuestions() {
-    
+    $("#questions").html("<h2>" + trivialPursuit[0].quesion + "</h2>");
+    question++;
+    for(i = 0; i<trivialPursuit.length; i++) {
+
+    }
 }
+
+//Show Score
+function showScore() {
+
+    $("#score-screen").html("<p>" + correctAnswer + "</p>")
+    $("#score-screen").html("<p>" + correctAnswer + "</p>")
+    $("#score-screen").html("<p>" + correctAnswer + "</p>")
+}
+
 
 
